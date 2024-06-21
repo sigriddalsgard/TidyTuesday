@@ -46,8 +46,8 @@ const svg = d3.create('svg')
 //svg.append('rect')
 //  .attr('width', width)
 //  .attr('height', height)
-//  .attr('fill', 'white') // Eller en anden farve, du ønsker som overlejringslag
-//  .attr('opacity', 0.5); // Juster opaciteten for at styre gennemskinneligheden
+//  .attr('fill', 'white')
+//  .attr('opacity', 0.5)
 
 const xTickValues = [1854, 1880, 1900, 1920, 1940, 1960, 1980, 2000, 2022]
 
@@ -147,23 +147,6 @@ groups.forEach(([title, data], i) => {
       .attr("stroke", "black")
       .attr("stroke-opacity", 0.3)
       .attr("d", area)
-      //.each(function(d, i) {
-        //console.log('Path Data:', d);
-      //})
-
-  //const pathData = (rollup);
-  //  if (typeof pathData !== 'string' || pathData.includes('NaN')) {
-  //    console.error("Invalid path data:", pathData);
-  //  } else {
-  //    svg.append('path')
-  //      .attr('d', pathData)
-  //      .attr('stroke', 'black');
-  //  }
-
-  //plot.selectAll("path")
-  //  .each(function(d, i) {
-  //    console.log('Path Data:', d);
-  //  });
 })
 
 const chart = svg.node()
